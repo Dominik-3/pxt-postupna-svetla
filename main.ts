@@ -20,7 +20,7 @@ const stripLength = 17;
 let strip = neopixel.create(DigitalPin.P1, 24, NeoPixelMode.RGB)
 
 basic.forever(function(){
-    for (let i = 0; i < hascolor.lenght; i++){
+    for (let i = 0; i < hascolor.length; i++){
         const count = hascolor[i];
         const place = (stripLength - count) / 2;
         const color = colorTree[i % colorTree.length];
